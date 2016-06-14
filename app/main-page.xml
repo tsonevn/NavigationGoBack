@@ -1,0 +1,9 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" actionBarHidden="true" loaded="onLoaded" navigatingTo="navigatingTo">
+  
+  
+  <StackLayout loaded="stackLoaded">
+    <Label text="Next" class="title"/>
+    <Button text="Next" tap="onTapMain" loaded="buttonLaoded"/>
+    
+  </StackLayout>
+</Page>

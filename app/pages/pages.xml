@@ -1,0 +1,15 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="onLoaded" navigatedTo="onNavigatedTo">
+    
+    <Page.actionBar>
+        <ActionBar>
+          <NavigationButton text="ios back"  android.systemIcon = "ic_menu_back" tap="goBack"/>
+        </ActionBar>
+    </Page.actionBar>
+    
+    <StackLayout>
+        <Label text="Page 2" textWrap="true" />
+        <Button text="Go back" tap="onTap" />
+        <Button text="topmost-GoBack" tap="secondTap" />
+        
+    </StackLayout>
+</Page>
