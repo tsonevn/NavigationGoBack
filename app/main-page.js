@@ -11,7 +11,11 @@ function onTapMain(args) {
 }
 exports.onTapMain = onTapMain;
 function onLoaded(args) {
-    frame_1.topmost().navigate({ moduleName: "./pages/pages" });
+    console.log(global.myVariable);
+    if (global.myVariable == 'firstTime') {
+        frame_1.topmost().navigate({ moduleName: "./pages/pages" });
+        global.myVariable = 'secondTime';
+    }
 }
 exports.onLoaded = onLoaded;
 function stackLoaded(args) {

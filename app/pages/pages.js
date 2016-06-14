@@ -23,4 +23,8 @@ function secondTap(args) {
     frame_1.topmost().goBack();
 }
 exports.secondTap = secondTap;
+function goNextPage(args) {
+    frame_1.topmost().navigate({ moduleName: "/pages/page2" });
+}
+exports.goNextPage = goNextPage;
 //# sourceMappingURL=pages.js.map

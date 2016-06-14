@@ -26,3 +26,7 @@ export function goBack(args:EventData){
 export function secondTap(args:EventData){
     topmost().goBack();
 }
+
+export function goNextPage(args: EventData){
+    topmost().navigate({moduleName:"/pages/page2"});
+}

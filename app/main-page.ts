@@ -16,7 +16,12 @@ export function onTapMain(args:EventData){
 
 
 export function onLoaded(args:EventData){
-    topmost().navigate({moduleName:"./pages/pages"});
+    console.log(global.myVariable);
+    if(global.myVariable == 'firstTime'){
+        
+        topmost().navigate({moduleName:"./pages/pages"});
+        global.myVariable = 'secondTime';
+    }
 }
 
 export function stackLoaded(args:EventData){

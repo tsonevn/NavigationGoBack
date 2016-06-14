@@ -10,6 +10,7 @@
         <Label text="Page 2" textWrap="true" />
         <Button text="Go back" tap="onTap" />
         <Button text="topmost-GoBack" tap="secondTap" />
+        <Button text="page3" tap="goNextPage" />
         
     </StackLayout>
 </Page>
